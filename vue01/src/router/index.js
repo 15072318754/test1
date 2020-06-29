@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../components/Login.vue'
 import Home from '../components/Home.vue'
-
+import Shouye from '../components/shouye/Shouye.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -18,7 +18,10 @@ const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: Home
+    component: Home,
+    children: [
+      { path: '/shouye', component: Shouye }
+    ]
   }
 ]
 

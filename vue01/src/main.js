@@ -4,7 +4,9 @@ import router from './router'
 import './assets/css/global.css'
 // 按需引入
 import './plugin/element.js'
+import 'element-ui/lib/theme-chalk/index.css'
 import './assets/fonts/iconfont.css'
+
 Vue.config.productionTip = false
 
 new Vue({
